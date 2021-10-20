@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello():
     
     data = {
-        'summary': profile['firstName'],
+        'summary': 'prueba',
         'raw': 'Successful',
     }
 
