@@ -3,6 +3,13 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/info')
 def hello():
-    return 'Hello, World!'
+    
+    data = {
+        'summary': profile['firstName'],
+        'raw': 'Successful',
+    }
+
+    return data
+   
