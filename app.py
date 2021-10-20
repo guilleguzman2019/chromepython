@@ -9,12 +9,12 @@ def hello():
 
     perfil = 'micaela-patricia-jasarevic-10a883140'
 
-    api = Linkedin('guillermoguzman.2016@gmail.com', 'guille16')
+    #api = Linkedin('guillermoguzman.2016@gmail.com', 'guille16')
 
-    profile = api.get_profile(perfil)
+    #profile = api.get_profile(perfil)
 
     data = {
-        'summary': profile['firstName'],
+        'summary': 'super',
         'raw': 'Successful',
     }
 
