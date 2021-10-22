@@ -23,10 +23,10 @@ def hello():
         response = s.get(company_link)
         response_dict = response.json()
         result = json.dumps(response_dict)
-        #print(result)
+        print(result)
     
     data = {
-        'summary': result['firstName'],
+        'summary': 'ok',
         'raw': 'Successful',
     }
 
