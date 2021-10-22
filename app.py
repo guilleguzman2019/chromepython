@@ -13,7 +13,7 @@ def hello():
     headers = {"user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36",
            }
 
-    company_link = 'https://www.linkedin.com//voyager/api/identity/profiles/guillermo-alejandro-guzman/profileContactInfo'
+    company_link = 'https://www.linkedin.com/voyager/api/identity/profiles/micaela-patricia-jasarevic-10a883140/profileContactInfo'
 
     with requests.session() as s:
         s.cookies['li_at'] = "AQEDARxXg0cDGCM-AAABfJ5Lih8AAAF8wlgOH04AAVrtbs3uVlAsVQyqqvupNFjQeC4S8B-rcP_tB8kru2_ErtLkLIjjSq6aw8I_5Ecv9kNO60OIf2ZgfD1CX8cTihYRbXje6xwcDQ1y8vlv-KJqmWrW"
