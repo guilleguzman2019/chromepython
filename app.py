@@ -39,7 +39,7 @@ def hello():
           """
     
     class MyFPDF(FPDF, HTMLMixin):
-	pass
+		pass
 
     pdf = MyFPDF()
     #First page
