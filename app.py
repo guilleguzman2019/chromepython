@@ -6,6 +6,8 @@ from fpdf import FPDF, HTMLMixin
 app = Flask(__name__)
 
 
+
+
 @app.route('/info')
 def hello():
     
@@ -39,7 +41,7 @@ def hello():
           """
     
     class MyFPDF(FPDF, HTMLMixin):
-		pass
+        pass
 
     pdf = MyFPDF()
     #First page
