@@ -8,28 +8,9 @@ app = Flask(__name__)
 
 @app.route('/info')
 def hello():
-    html = """
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <!-- head definitions go here -->
-            </head>
-            <body>
-                <h1>Hola mundo!!</h1>
-            </body>
-        </html>
-        """
-
-    from fpdf import FPDF, HTMLMixin
-
-    class MyFPDF(FPDF, HTMLMixin):
-	    pass
-
-    pdf = MyFPDF()
-    pdf.add_page()
-    pdf.write_html(html)
-
-    pdf.output('example.pdf', 'F')
+    pdf = pydf.generate_pdf('<h1>this is html</h1>')
+    with open('test_doc.pdf', 'wb') as f:
+        f.write(pdf)
     
     data = {
         'summary': response_dict['emailAddress'],
