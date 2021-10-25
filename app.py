@@ -1,7 +1,5 @@
 from flask import Flask
-import requests
-import json
-from fpdf import FPDF, HTMLMixin
+import pydf
 
 app = Flask(__name__)
 
